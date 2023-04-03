@@ -23,5 +23,5 @@ router = routers.DefaultRouter()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls), name='api'),
-    url('^csv-uploader/$', CsvUploader.as_view(), name='csv-uploader'),
+    url('^api/v1/csv-processor/$', CsvUploader.as_view(), name='csv-uploader'),
 ]
