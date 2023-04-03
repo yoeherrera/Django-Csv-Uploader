@@ -1,4 +1,4 @@
-"""djangoCsvUploader URL Configuration
+"""csvProcessor URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -16,14 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from rest_framework import routers
-from mainApp.views import *
+from csvProcessorAPI.views import *
 from django.urls import re_path as url
 
 router = routers.DefaultRouter()
-
-#API
-router.register(r'students', StudentsViewSet, basename='students')
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls), name='api'),

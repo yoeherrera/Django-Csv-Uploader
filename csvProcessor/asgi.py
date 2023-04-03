@@ -1,5 +1,5 @@
 """
-ASGI config for djangoCsvUploader project.
+ASGI config for csvProcessor project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoCsvUploader.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'csvProcessor.settings')
 
 application = get_asgi_application()
